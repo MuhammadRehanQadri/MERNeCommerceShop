@@ -11,7 +11,7 @@ import useQuery from "../utils/useQuery";
 const LoginScreen = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const redirect = useQuery().get("") || "/";
+  const redirect = useQuery().get("redirect") || "/";
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
